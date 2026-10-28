@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kills Community</title>
+<style>
+body{margin:0;background:#08030f;color:white;font:16px Arial;padding:25px}main{max-width:850px;margin:auto}h1{color:#b44cff;font-size:40px}section{background:#150b20;border:1px solid #63328a;border-radius:18px;padding:20px;margin:15px 0}p{color:#d7c8e3}.mint{color:#63ffd0}a,button{display:inline-block;background:#982fe0;color:white;padding:12px 16px;border:0;border-radius:10px;text-decoration:none;margin:5px 0}input{padding:12px;background:#09050e;color:white;border:1px solid #63328a;border-radius:8px;width:85%}li{padding:5px}
+</style>
+</head>
+<body>
+<main>
+<h1>KILLS COMMUNITY 💜</h1>
+<p>Minecraft, community, and the crew.</p>
+<section><h2>⛏️ Minecraft Server</h2><p>IP: <b class="mint">killz</b></p><p>Port: Normal</p><button onclick="navigator.clipboard.writeText('killz').then(()=>alert('Copied!')).catch(()=>alert('Server IP: killz'))">Copy IP</button></section>
+<section><h2>💜 Discord</h2><p>Join the community!</p><a href="https://discord.gg/fRBuX7rqBQ">Join Discord</a></section>
+<section><h2>🛡️ Mod Team</h2><ul><li>Killer — Owner</li><li>FlameFrags</li><li>cannibal_pig</li><li>bennycarson</li><li>bmarsh</li></ul></section>
+<section><h2>🌟 Support</h2><p>$5/month subscription. Contact the team first; payment doesn't guarantee a staff role.</p><a href="https://cash.app/$Jeremiagodfrey67">Cash App</a></section>
+<section><h2>👤 Profile</h2><input id="name" placeholder="Minecraft username"><button onclick="localStorage.setItem('killsName',document.getElementById('name').value);document.getElementById('msg').textContent='Saved!'">Save</button><button onclick="localStorage.removeItem('killsName');document.getElementById('name').value='';document.getElementById('msg').textContent='Reset!'">Reset</button><p id="msg"></p></section>
+</main>
+<script>document.getElementById('name').value=localStorage.getItem('killsName')||'';</script>
+</body>
+</html>
